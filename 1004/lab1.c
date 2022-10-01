@@ -18,7 +18,7 @@ int main()
     if(myHash(key) == 6384369399)
         showFlag(key);
     else
-        printf("error\n");
+        printf("error:(\n");
     return 0;
 }
 
@@ -91,8 +91,8 @@ void genKey()
         for(int j = 0; j < 4; j++)
             key[j] ^= table[i][j];
 
-    if(strcmp(key, "I <compare with the key>"))
-        printf("The key is in memory now...\n");
+    if(!strcmp(key, "<I compare with the key>"))
+        printf("Hi :)\n");
     else
         printf("The key is in memory now...\n");
 }
@@ -103,5 +103,5 @@ void showFlag(char* key)
     printf("FLAG{");
     for(int i = 0; i < 4; i++)
         printf("%c", flag[i] ^ key[i]);
-    printf("}");
+    printf("}\n");
 }
