@@ -1,0 +1,4 @@
+FROM ubuntu:20.04
+MAINTAINER M11015028
+
+COPY lab1 /home/lab1
