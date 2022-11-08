@@ -14,7 +14,11 @@ int main()
     std::size_t pos2 = str1.find(".");
     str1 = str1.substr(pos1, pos2 - pos1);
 
-
+    if(str1 != "18")
+    {
+        std::cout << "Ubuntu18?" << std::endl;
+        return 0;
+    }
     //std::cout << str1 << std::endl;
 
     std::ifstream f("/etc/os-release");
